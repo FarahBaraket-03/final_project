@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+pyproject.toml
+
+uv.lock
+
+main.py
