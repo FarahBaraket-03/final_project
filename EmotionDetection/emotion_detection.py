@@ -54,10 +54,10 @@ def emotion_detector(text_to_analyse):
 
         dominant_emotion = None
         emotions['dominant_emotion'] = dominant_emotion
-    
-    return formatted_response
+
+        return emotions
 
 
-print(emotion_detector('i love pizza'))
+
 
 
