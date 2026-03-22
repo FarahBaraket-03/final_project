@@ -37,10 +37,27 @@ def emotion_detector(text_to_analyse):
         emotions['dominant_emotion'] = dominant_emotion
 
         return emotions
+    elif response.status_code == 400:
+        anger_score = None
+        disgust_score = None
+        fear_score = None
+        joy_score = None
+        sadness_score = None
+
+        emotions = {
+            'anger': anger_score,
+            'disgust': disgust_score,
+            'fear': fear_score,
+            'joy': joy_score,
+            'sadness': sadness_score
+        }
+
+        dominant_emotion = None
+        emotions['dominant_emotion'] = dominant_emotion
     
     return formatted_response
 
 
 print(emotion_detector('i love pizza'))
-print(emotion_detector('i hate pizza'))
+
 
